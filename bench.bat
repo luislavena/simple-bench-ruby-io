@@ -1,0 +1,1 @@
+@timer ruby.exe -I. app.rb
