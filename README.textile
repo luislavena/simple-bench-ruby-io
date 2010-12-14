@@ -1,0 +1,31 @@
+h1. simple-bench-ruby-io
+
+The purpose of this repository is mimic the basic startup issues Ruby suffers
+on Windows, while not trying to figure out all the pieces of working with a
+Rails application.
+
+h2. What is inside
+
+* boot.rb - contains a simple loading mechanism for loading Isolate
+* app.rb - contains the basic startup/setup required for a simple application
+
+h2. Requirements
+
+* Rake
+* Isolate 3.1 (@gem install isolate --pre@)
+* "ImDisk":http://www.ltr-data.se/opencode.html/#ImDisk
+
+h3. Why is using ABC and not XYZ
+
+Not going to explain all the details, but the rationale is the following:
+
+h4. Isolate versus Bundler
+
+Needed something that install gems inside the RAMDisk (ImDisk) and
+keep the Ruby installation clean. Also need something small in code that do not
+affect a lot runtime operations (it also play nice with binary gems).
+
+h4. DataMapper versus ActiveRecord
+
+ActiveRecord depends on ActiveSupport and delays a lot of require functionality.
+I'm trying to simulate a _simple_ case first, then will worry about Rails.
