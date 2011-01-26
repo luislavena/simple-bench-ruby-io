@@ -14,7 +14,6 @@ h2. Requirements
 * Rake
 * Isolate 3.1 (@gem install isolate --pre@)
 * "ImDisk":http://www.ltr-data.se/opencode.html/#ImDisk
-* "w32time":https://github.com/larsch/w32time (renamed as timer)
 
 h3. Why is using ABC and not XYZ
 
