@@ -11,8 +11,8 @@ h2. What is inside
 
 h2. Requirements
 
-* Rake
-* Isolate 3.1 (@gem install isolate --pre@)
+* Rake 0.8.7
+* Isolate 3.1.0
 * "ImDisk":http://www.ltr-data.se/opencode.html/#ImDisk
 
 h3. Why is using ABC and not XYZ
